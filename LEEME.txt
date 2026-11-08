@@ -1,0 +1,15 @@
+Pagina: Tus flores amarillas
+
+Como abrirla en VS Code:
+1. Abre la carpeta "mi-pagina" (Archivo > Abrir carpeta).
+2. Instala la extension "Live Server" y haz clic derecho en index.html > "Open with Live Server".
+   (Tambien puedes hacer doble clic en index.html y se abre en el navegador.)
+
+Donde cambiar cosas:
+- Nombres y firma: js/script.js (variables PARA y DE, al inicio).
+- Textos de la carta y las promesas: index.html
+- Colores y estilos: css/estilos.css
+- Fotos: carpeta fotos/ (carta.jpg, flores.jpg, final.jpg)
+- Gatos: carpeta gifs/
+
+Para subirla a internet (como GitHub Pages) sube la carpeta completa, con todo adentro.

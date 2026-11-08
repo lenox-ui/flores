@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tus flores amarillas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<main>
+
+  <section class="vista on" id="inicio">
+    <h1 id="hola"></h1>
+    <p class="sub">Te debía unas flores amarillas. Aquí están, con mi disculpa y todo lo que quiero decirte.</p>
+    <div class="tarjetas">
+      <button class="tarjeta" data-ir="carta"><span class="ic">💌</span><b>Mi carta</b><small>Toca para leer</small></button>
+      <button class="tarjeta" data-ir="promesas"><span class="ic">🤝</span><b>Mis promesas</b><small>Las que sí cumpliré</small></button>
+      <button class="tarjeta" data-ir="flores"><span class="ic">🌼</span><b>Tus flores</b><small>Las que te debía</small></button>
+    </div>
+    <button class="pill" data-ir="perdon">¿Me perdonas? 🌻</button>
+    <p class="firma" id="firma1"></p>
+  </section>
+
+  <section class="vista" id="carta">
+    <button class="volver" data-ir="inicio">← Volver</button>
+    <h2>Una carta para ti</h2>
+    <button class="sobre" id="sobre"><span class="ic">✉️</span>Toca el sobre</button>
+    <div class="carta" id="texto">
+      <div class="saludo"><h2 id="cartaHola"></h2><img class="foto" alt="" src="fotos/carta.jpg"></div>
+      <p>Te prometí unas flores amarillas y no llegaron. Mi computador falló justo cuando iba a enviártelas. No lo digo como excusa: la promesa era mía y debí buscar otra manera de cumplirla.</p>
+      <p>Entiendo que te quedaras con la idea de que yo solo prometo y no cumplo. Ese día fallé, y lo lamento de verdad. No quiero que esa sea la imagen que te quede de mí.</p>
+      <p>Por eso hice esta página: es el ramo que te debía, con mi disculpa y las promesas que sí voy a cumplir.</p>
+      <p id="cartaFirma"></p>
+    </div>
+  </section>
+
+  <section class="vista" id="promesas">
+    <button class="volver" data-ir="inicio">← Volver</button>
+    <h2>Lo que sí voy a cumplir</h2>
+    <p class="sub">Menos palabras bonitas y más hechos. Estas son mis promesas.</p>
+    <div class="lista">
+      <div class="promesa"><span class="ic">⏰</span><div><b>Cumplir en el plazo.</b> Si digo que lo hago, lo hago cuando dije.</div></div>
+      <div class="promesa"><span class="ic">📣</span><div><b>Avisar a tiempo.</b> Si algo sale mal, te cuento de una vez, no cuando ya sea tarde.</div></div>
+      <div class="promesa"><span class="ic">🛟</span><div><b>Tener un plan B.</b> Un computador dañado no debería dejar una promesa sin cumplir.</div></div>
+      <div class="promesa"><span class="ic">🙌</span><div><b>Prometer menos y cumplir más.</b> Solo te digo lo que sé que puedo hacer.</div></div>
+      <div class="promesa"><span class="ic">🌼</span><div><b>Empezar hoy.</b> Todo comienza con estas flores y este sitio, con el que te pido perdón y que te dará la seguridad de que no va a pasar de nuevo.</div></div>
+    </div>
+  </section>
+
+  <section class="vista" id="flores">
+    <button class="volver" data-ir="inicio">← Volver</button>
+    <h2>Tus flores amarillas</h2>
+    <svg class="flores" id="ramoA" viewBox="0 0 400 260" role="img" aria-label="Un ramo de flores amarillas que va creciendo"></svg>
+    <p class="sub">Las que te prometí y llegaron tarde. Ojalá valgan la espera.</p>
+    <img class="foto" alt="" src="fotos/flores.jpg">
+  </section>
+
+  <section class="vista" id="perdon">
+    <button class="volver" data-ir="inicio">← Volver</button>
+    <div id="pregunta">
+      <h2>¿Me perdonas?</h2>
+      <p class="pregunta">Prometo que esta vez sí cumplo.</p>
+      <div class="gif" id="tristeGif" hidden><img alt="Un gatito triste" src="gifs/gato-triste.gif"></div>
+      <div class="botones">
+        <button id="si" type="button">Sí, te perdono</button>
+        <button id="no" type="button">No</button>
+      </div>
+    </div>
+    <div id="ganas">
+      <h2>¡Gracias por perdonarme!</h2>
+      <div class="gif"><img alt="Un gatito bailando" src="gifs/gato-bailando.gif"></div>
+      <svg class="flores" id="ramoB" viewBox="0 0 400 260" role="img" aria-label="Ramo de flores amarillas"></svg>
+      <p class="sub">Promesa cumplida. Y esta es solo la primera.</p>
+      <div class="cierre centrado"><img class="foto" alt="" src="fotos/final.jpg"><p class="firma" id="firma2"></p></div>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
